@@ -33,8 +33,63 @@ var products = [
     {
         id: "gowild-1",
         name: "GoWild-01",
-        price: 70.00,
+        price: 40.00,
         image: "images/Gowild1.jpg"
+    },
+    {
+        id: "gowild-2",
+        name: "GoWild-02",
+        price: 70.00,
+        image: "images/gowild2.jpg"
+    },
+    {
+        id: "gowild-3",
+        name: "GoWild-03",
+        price: 50.00,
+        image: "images/gowild3.jpg"
+    },
+    {
+        id: "gowild-4",
+        name: "GoWild-04",
+        price: 30.00,
+        image: "images/gowild4.jpg"
+    },
+    {
+        id: "gowild-5",
+        name: "GoWild-05",
+        price: 40.00,
+        image: "images/Gowild5.jpg"
+    },
+    {
+        id: "chokers-1",
+        name: "Chokers-01",
+        price: 40.00,
+        image: "images/choker1.jpg"
+    },
+    {
+        id: "chokers-2",
+        name: "Chokers-02",
+        price: 70.00,
+        image: "images/choker2.jpg"
+    },
+    {
+        id: "chokers-3",
+        name: "Chokers-03",
+        price: 50.00,
+        image: "images/choker3.jpg"
+    },
+    {
+        
+        id: "chokers-4",
+        name: "Chokers-04",
+        price: 30.00,
+        image: "images/choker4.jpg"
+    },
+    {
+        id: "chokers-5",
+        name: "Chokers-05",
+        price: 40.00,
+        image: "images/choker5.jpg"
     },
 
 ]
