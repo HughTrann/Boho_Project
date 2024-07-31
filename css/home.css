@@ -186,6 +186,7 @@ main {
     height: 50vh;
     display: flex;
     width: max-content;
+    overflow: hidden;
     animation: scroll-right 20s linear infinite;
     pointer-events: none; /* Disable pointer events on the gallery */
 }
