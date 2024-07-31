@@ -1,0 +1,309 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 10px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+aside {
+    /* border: 2px black solid; */
+    /* padding-top: 40px; */
+    /* padding-bottom: 40px; */
+    width: 15%;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.logo {
+    /* border: 2px red solid; */
+    text-align: center;
+    height: 20vh;
+    
+}
+
+.logo a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-items: center;
+}
+
+aside nav {
+    /* border: 2px blue solid; */
+    height: 30vh;
+    
+}
+
+aside nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+aside nav ul li {
+    margin-bottom: 15px;
+
+}
+
+aside nav ul li a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding: 10px 10px;
+    letter-spacing: .2em;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+aside nav ul li a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+aside nav ul li a:hover::after{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+aside nav ul li a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 7px;
+    left: 10px;
+    right: 10px;
+    background-color: #da1212;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+aside .cart {
+    font-size: 50px;
+    text-align: center;
+    height: 30vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+aside .cart a {
+    /* color: rgb(75, 243, 75); */
+    color: #17e6d4;
+}
+
+aside .cart:hover {
+    transform: scale(1.10);
+}
+
+
+aside footer {
+    /* border: 2px greenyellow solid; */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+}
+
+aside footer label {
+    font-size: 12px;
+}
+
+aside footer ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+aside footer ul li {
+    display: inline;
+    font-size: 20px;
+    
+}
+
+/* =========================================== */
+
+main {
+    /* border: 2px red solid; */
+    /* width: 85%;
+    float: right;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; */
+     /* border: 2px, red, solid; */
+     width: 85%;
+     float: right;
+     -webkit-transition: 0.5s;
+     -o-transition: 0.5s;
+     transition: 0.5s;
+     background-color: antiquewhite;
+     border-radius: 15px;
+}
+
+.hero-container {
+    /* border: 2px solid #ccc; */
+    overflow: hidden;
+    width: 100%; /* Adjust the width as needed */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    /* margin-left: 12px; */
+    /* margin-right: 12px */
+}
+
+
+.hero-section {
+    /* border: 2px green solid; */
+    height: 50vh;
+    display: flex;
+    width: max-content;
+    animation: scroll-right 20s linear infinite;
+    pointer-events: none; /* Disable pointer events on the gallery */
+}
+
+.hero-section img {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+    pointer-events: all; /* Re-enable pointer events on the images */
+}
+
+.hero-container:hover .hero-section{
+   
+    animation-play-state: paused; /* Pause the animation on hover */
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(calc(-50%));
+    }
+    100% {
+        transform: translateX(0); /* Adjust based on container width */
+    }
+}
+
+.hero-section img:hover {
+    transform: scale(1.05);
+}
+
+/* =========================================== */
+
+.feature-products {
+    margin-top: 0;
+    
+}
+
+.feature-products h1 {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.feature-content {
+    /* border: 2px brown solid; */
+    display: flex;
+    font-size: 40px;
+     
+}
+
+.feature-1, .feature-2, .feature-3 {
+    /* border: 2px solid green; */
+    flex: 1 1 30%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+ 
+    
+}
+
+   
+.feature-content .a-image {
+    /* border: 2px rgb(81, 255, 0) solid; */
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 20px;  
+}
+
+.feature-content img {
+    /* border: 2px solid blue; */
+    border-radius:10px;
+    width: 100%;
+    height: 70vh;
+   
+    
+}
+
+/* =========================================== */
+
+.about-us-preview {
+    /* border: 2px orange solid; */
+    /* margin-top: 100px; */
+    height: 40vh;
+    text-align: center;
+}
+
+
+.about-us-preview p{
+    /* border: 2px solid green; */
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.about-us-preview button{
+    /* border: 2px solid blue; */
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family:'Courier New', Courier, monospace;
+  
+}
+
+main .line{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 100%;
+   margin-top: 50px;
+   margin-bottom: 0;
+}
+
+.line p {
+    text-align: center;
+    
+}

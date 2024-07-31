@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boho Soul</title>
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="script/script-product.js" defer></script>
 </head>
 <body>
     
@@ -26,6 +27,12 @@
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
+
+    <div class="cart">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+
+
 <!-- Footer -->
     <footer class="footer">
         <!-- <label>All rights reserved</label><br /> -->
@@ -40,8 +47,191 @@
 </aside>
 
 <!-- Main body  -->
-<main>Products
+<main>
     
+    <div class="container" id="denty">
+        <h1>Denty</h1>
+        <div class="container-level-2">
+            <div class="item">
+                <img src="images/denty1.jpg" alt="">
+                <p>SKU: D0101</p>
+                <p>Price: $40.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <label onclick="select()" >
+                    <input type="checkbox" id="denty-1" value="denty-1" name="product">
+                </label>
+            </div>
+            <div class="item">
+                <img src="images/denty2.jpg" alt="">
+                <p>SKU: D0102</p>
+                <p>Price: $70.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <label onclick="select()">
+                    <input type="checkbox" id="denty-2" value="denty-2" name="product">
+                </label>
+            </div>
+            <div class="item">
+                <img src="images/denty3.jpg" alt="">
+                <p>SKU: D0103</p>
+                <p>Price: $50.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <label onclick="select()">
+                    <input type="checkbox" id="denty-3" value="denty-3" name="product">
+                </label>
+            </div>
+            <div class="item">
+                <img src="images/denty4.jpg" alt="">
+                <p>SKU: D0104</p>
+                <p>Price: $30.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <label onclick="select()">
+                    <input type="checkbox" id="denty-4" value="denty-4" name="product">
+                </label>
+            </div>
+            <div class="item">
+                <img src="images/denty5.jpg" alt="">
+                <p>SKU: D0105</p>
+                <p>Price: $40.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <label onclick="select()">
+                    <input type="checkbox" id="denty-5" value="denty-5" name="product">
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="line">
+        <p>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+        </p>
+    </div>
+    
+
+    <div class="container" id="gowild">
+        <h1>GoWild</h1>
+        <div class="container-level-2">
+            <div class="item">
+                <img src="images/Gowild1.jpg" alt="">
+                <p>SKU: G0101</p>
+                <p>Price: $40.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <label onclick="select()">
+                    <input type="checkbox" id="gowild-1" value="gowild-1" name="product">
+                </label>
+            </div>
+            <div class="item">
+                <img src="images/gowild2.jpg" alt="">
+                <p>SKU: G0102</p>
+                <p>Price: $70.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <input type="checkbox" id="gowild-2">
+            </div>
+            <div class="item">
+                <img src="images/gowild3.jpg" alt="">
+                <p>SKU: G0103</p>
+                <p>Price: $50.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <input type="checkbox" id="gowild-3">
+            </div>
+            <div class="item">
+                <img src="images/gowild4.jpg" alt="">
+                <p>SKU: G0104</p>
+                <p>Price: $30.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <input type="checkbox" id="gowild-4">
+            </div>
+            <div class="item">
+                <img src="images/gowild5.jpg" alt="">
+                <p>SKU: G0105</p>
+                <p>Price: $40.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <input type="checkbox" id="gowild-5">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="line">
+        <p>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+            <i class="fa-brands fa-galactic-republic"></i>
+        </p>
+    </div>
+
+    <div class="container" id="chokers">
+        <h1>Chokers</h1>
+        <div class="container-level-2">
+            <div class="item">
+                <img src="images/choker1.jpg" alt="">
+                <p>SKU: C0101</p>
+                <p>Price: $40.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <input type="checkbox" id="chokers-1">
+            </div>
+            <div class="item">
+                <img src="images/choker2.jpg" alt="">
+                <p>SKU: C0102</p>
+                <p>Price: $70.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <input type="checkbox" id="chokers-2">
+            </div>
+            <div class="item">
+                <img src="images/choker3.avif" alt="">
+                <p>SKU: C0103</p>
+                <p>Price: $50.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <input type="checkbox" id="chokers-3">
+            </div>
+            <div class="item">
+                <img src="images/choker4.jpg" alt="">
+                <p>SKU: C0104</p>
+                <p>Price: $30.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <input type="checkbox" id="chokers-4">
+            </div>
+            <div class="item">
+                <img src="images/choker5.jpg" alt="">
+                <p>SKU: C0105</p>
+                <p>Price: $40.00</p>
+                <label><i class="fa-solid fa-cart-shopping"></i></label>
+                <input type="checkbox" id="chokers-5">
+            </div>
+        </div>
+       
+    </div>
     
 
 </main>
