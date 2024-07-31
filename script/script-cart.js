@@ -143,7 +143,7 @@ function displayCart(productList) {
                         <td></td>
                         <td></td>
                         <td>Total: </td>
-                        <td id="sumAmount">${sumAmount}</td>
+                        <td id="sumAmount" style="color:green; text-decoration: underline"><b>${sumAmount}</b></td>
                         `;
     cartBody.appendChild(rowSum);
     
