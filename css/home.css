@@ -180,15 +180,15 @@ main {
     /* border: 2px green solid; */
     height: 50vh;
     display: flex;
-    width: 100%;
-    animation: scroll-right 20s infinite;
+    width: max-content;
+    animation: scroll-right 20s linear infinite;
     pointer-events: none; /* Disable pointer events on the gallery */
 }
 
 .hero-section img {
     /* flex-shrink: 0; */
     /* width: 100%; */
-    height: auto;
+    /* height: auto; */
     /* object-fit: cover; */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.5s;
