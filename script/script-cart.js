@@ -76,7 +76,7 @@ var products = [
         id: "chokers-3",
         name: "Chokers-03",
         price: 50.00,
-        image: "images/choker3.jpg"
+        image: "images/choker3.avif"
     },
     {
         
@@ -204,10 +204,7 @@ function totalPayment(){
     // productAmount.forEach(total)
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById('cart-body').addEventListener('click', targetRowDelete);
-})
-
+document.getElementById('cart-body').addEventListener('click', targetRowDelete);
 
 function targetRowDelete(event){
     console.log(event.target.id == 'delete-btn')
@@ -220,7 +217,6 @@ function targetRowDelete(event){
     console.log("clicked")
 }
 
-
 function checkOut(){
     var totalPayment = document.querySelector('#sumAmount').textContent;
     var items = document.querySelectorAll('.amount-cell').length;
@@ -232,8 +228,7 @@ function checkOut(){
        
     localStorage.removeItem('productList');
     window.location.href = "products.html";
-    
-    
+   
 }
 
 
